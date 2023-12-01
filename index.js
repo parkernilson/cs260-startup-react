@@ -1,6 +1,5 @@
-const { getDefaultUserInfo } = require("./public/backend/utils");
 const express = require("express");
-const { getDB, getUser, getUserByToken, createUser } = require("./database");
+const { getDB, getUser, createUser, getUserByToken } = require("./database");
 const { v4: uuid } = require('uuid')
 const cookieParser = require('cookie-parser')
 const bcrypt = require('bcrypt')
@@ -25,6 +24,20 @@ app.set('trust proxy', true)
 // Router for service endpoints
 const apiRouter = express.Router();
 app.use(`/api`, apiRouter);
+
+apiRouter.get('/me', async (req, res) => {
+  if (!req.cookies[AUTH_COOKIE_NAME]) return res.status(404).send({ message: "There is no user logged in." })
+  try {
+    const user = await getUserByToken(req.cookies[AUTH_COOKIE_NAME])
+    if (user) {
+      return res.status(200).send({ user })
+    } else {
+      return res.status(401).send({ message: "Access denied." })
+    }
+  } catch(error) {
+    return res.status(500).send({ message: "An unknown error has occurred."})
+  }
+})
 
 // CreateAuth token for a new user
 apiRouter.post('/auth/create', async (req, res) => {
