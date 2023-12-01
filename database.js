@@ -2,7 +2,7 @@ const { MongoClient, ServerApiVersion } = require('mongodb');
 const path = require('path')
 const bcrypt = require('bcrypt')
 const { v4: uuid } = require('uuid')
-const { getDefaultUserInfo } = require('./public/backend/utils')
+const { getDefaultUserInfo } = require('./utils')
 
 const credentials = path.resolve(__dirname, 'keys/mongodb-key.pem')
 const client = new MongoClient('mongodb+srv://cs260-startup.v7mhvyu.mongodb.net/?authSource=%24external&authMechanism=MONGODB-X509&retryWrites=true&w=majority', {
