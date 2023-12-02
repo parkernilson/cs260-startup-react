@@ -20,13 +20,11 @@ const BoardCard = ({ board }: { board: Board }) => {
 
     return (
         <div className="border border-black shadow-md rounded-sm flex">
-            <Link to={`/soundboards/${board.id}`}>
-                <div className="flex-1 flex items-center h-full p-5 cursor-pointer">
-                    <i className={`${board.icon} fa-solid fa-2xl mr-3`}></i>
-                    <div className="flex flex-col items-start">
-                        <h2 className="font-display text-xl">{board.title}</h2>
-                        <p>{board.sounds.length} sounds</p>
-                    </div>
+            <Link className="flex-1 flex items-center h-full p-5 cursor-pointer" to={`/soundboards/${board.id}`}>
+                <i className={`${board.icon} fa-solid fa-2xl mr-3`}></i>
+                <div className="flex flex-col items-start">
+                    <h2 className="font-display text-xl">{board.title}</h2>
+                    <p>{board.sounds.length} sounds</p>
                 </div>
             </Link>
             <div className="flex items-end pr-3 pb-3">

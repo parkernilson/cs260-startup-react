@@ -1,9 +1,9 @@
-import { useContext, useEffect, useRef, useState } from "react"
-import { Board, IconOption } from "../interfaces"
-import { UserContext } from "./UserContext"
-import BoardCard from "./BoardCard"
-import { addSoundBoard, getSoundBoards } from "../db/db-accessors"
+import { useContext, useRef, useState } from "react"
 import { v4 as uuid } from 'uuid'
+import { addSoundBoard } from "../db/db-accessors"
+import { IconOption } from "../interfaces"
+import BoardCard from "./BoardCard"
+import { UserContext } from "./UserContext"
 
 const Dashboard = () => {
     const { user, reloadUser } = useContext(UserContext)

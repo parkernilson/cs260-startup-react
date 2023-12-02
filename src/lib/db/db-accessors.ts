@@ -1,11 +1,5 @@
 import { Board, Sound } from "../interfaces"
 
-export function getCurrentUser() {
-    const username = localStorage.getItem('currentUser')
-    if (username === null) throw new Error("User was not logged in")
-    else return username
-}
-
 /**
  * Get all of the sound boards that the user owns
  * @returns {Promise<Board[]>} 
@@ -93,8 +87,7 @@ export async function getSoundboard(username: string, boardId: string) {
 /**
  * @returns {Promise<void>}
  */
-export async function removeSoundFromBoard(boardId: string, soundId: string) {
-    const username = getCurrentUser()
+export async function removeSoundFromBoard(username: string, boardId: string, soundId: string) {
     return fetch(`/api/${username}/boards/${boardId}/sounds/${soundId}`, {
         method: "DELETE"
     })

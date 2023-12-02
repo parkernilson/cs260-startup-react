@@ -12,29 +12,29 @@ function getDefaultUserInfo() {
                         id: uuid(),
                         name: "Ambient Piano",
                         filename: "ambient-piano.mp3",
-                        url: "sounds/ambient-piano.mp3",
-                        color: "bg-red-300"
+                        url: "https://storyteller-sounds.s3.us-east-1.amazonaws.com/ambient-piano.mp3",
+                        color: "#7df088"
                     },
                     {
                         id: uuid(),
                         name: "Fire Winds",
                         filename: "fire-winds-swoosh.mp3",
-                        url: "sounds/fire-winds-swoosh.mp3",
-                        color: "bg-blue-300"
+                        url: "https://storyteller-sounds.s3.us-east-1.amazonaws.com/fire-winds-swoosh.mp3",
+                        color: "#cf7df0"
                     },
                     {
                         id: uuid(),
                         name: "Tropical Sounds",
                         filename: "nature-sounds-tropical.mp3",
-                        url: "sounds/nature-sounds-tropical.mp3",
-                        color: "bg-yellow-300"
+                        url: "https://storyteller-sounds.s3.us-east-1.amazonaws.com/nature-sounds-tropical.mp3",
+                        color: "#f0c47d"
                     },
                     {
                         id: uuid(),
                         name: "Beach",
                         filename: "sandy-beach-calm.mp3",
-                        url: "sounds/sandy-beach-calm.mp3",
-                        color: "bg-teal-300"
+                        url: "https://storyteller-sounds.s3.us-east-1.amazonaws.com/sandy-beach-calm.mp3",
+                        color: "#f0807d"
                     }
                 ],
             },
@@ -47,29 +47,29 @@ function getDefaultUserInfo() {
                         id: uuid(),
                         name: "Ambient Piano",
                         filename: "ambient-piano.mp3",
-                        url: "sounds/ambient-piano.mp3",
-                        color: "bg-red-300"
+                        url: "https://storyteller-sounds.s3.us-east-1.amazonaws.com/ambient-piano.mp3",
+                        color: "#7df088"
                     },
                     {
                         id: uuid(),
                         name: "Fire Winds",
                         filename: "fire-winds-swoosh.mp3",
-                        url: "sounds/fire-winds-swoosh.mp3",
-                        color: "bg-blue-300"
+                        url: "https://storyteller-sounds.s3.us-east-1.amazonaws.com/fire-winds-swoosh.mp3",
+                        color: "#cf7df0"
                     },
                     {
                         id: uuid(),
                         name: "Tropical Sounds",
                         filename: "nature-sounds-tropical.mp3",
-                        url: "sounds/nature-sounds-tropical.mp3",
-                        color: "bg-yellow-300"
+                        url: "https://storyteller-sounds.s3.us-east-1.amazonaws.com/nature-sounds-tropical.mp3",
+                        color: "#f0c47d"
                     },
                     {
                         id: uuid(),
                         name: "Beach",
                         filename: "sandy-beach-calm.mp3",
-                        url: "sounds/sandy-beach-calm.mp3",
-                        color: "bg-teal-300"
+                        url: "https://storyteller-sounds.s3.us-east-1.amazonaws.com/sandy-beach-calm.mp3",
+                        color: "#f0807d"
                     }
                 ],
             },
@@ -82,29 +82,29 @@ function getDefaultUserInfo() {
                         id: uuid(),
                         name: "Ambient Piano",
                         filename: "ambient-piano.mp3",
-                        url: "sounds/ambient-piano.mp3",
-                        color: "bg-red-300"
+                        url: "https://storyteller-sounds.s3.us-east-1.amazonaws.com/ambient-piano.mp3",
+                        color: "#7df088"
                     },
                     {
                         id: uuid(),
                         name: "Fire Winds",
                         filename: "fire-winds-swoosh.mp3",
-                        url: "sounds/fire-winds-swoosh.mp3",
-                        color: "bg-blue-300"
+                        url: "https://storyteller-sounds.s3.us-east-1.amazonaws.com/fire-winds-swoosh.mp3",
+                        color: "#cf7df0"
                     },
                     {
                         id: uuid(),
                         name: "Tropical Sounds",
                         filename: "nature-sounds-tropical.mp3",
-                        url: "sounds/nature-sounds-tropical.mp3",
-                        color: "bg-yellow-300"
+                        url: "https://storyteller-sounds.s3.us-east-1.amazonaws.com/nature-sounds-tropical.mp3",
+                        color: "#f0c47d"
                     },
                     {
                         id: uuid(),
                         name: "Beach",
                         filename: "sandy-beach-calm.mp3",
-                        url: "sounds/sandy-beach-calm.mp3",
-                        color: "bg-teal-300"
+                        url: "https://storyteller-sounds.s3.us-east-1.amazonaws.com/sandy-beach-calm.mp3",
+                        color: "#f0807d"
                     }
                 ],
             }

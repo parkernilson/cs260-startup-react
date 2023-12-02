@@ -9,7 +9,6 @@ const Login = () => {
     const navigate = useNavigate()
 
     const handleLogin = async () => {
-        console.log("logging in!")
         try {
             await login(username, password)
             navigate("/soundboards")

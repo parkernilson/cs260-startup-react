@@ -2,7 +2,9 @@ const express = require("express");
 const { getDB, getUser, createUser, getUserByToken } = require("./database");
 const { v4: uuid } = require('uuid')
 const cookieParser = require('cookie-parser')
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcrypt');
+const { peerProxy } = require("./peerProxy");
+const path = require("path");
 
 const AUTH_COOKIE_NAME = 'storyteller-token'
 
@@ -17,6 +19,7 @@ app.use(express.json());
 app.use(cookieParser())
 
 // Serve up the front-end static content hosting
+app.use(express.static("build"))
 app.use(express.static("public"));
 
 app.set('trust proxy', true)
@@ -371,7 +374,7 @@ apiRouter.delete(
 
 // Return the application's default page if the path is unknown
 app.use((_req, res) => {
-  res.sendFile("index.html", { root: "public" });
+  res.sendFile("index.html", { root: "build" });
 });
 
 // setAuthCookie in the HTTP response
@@ -383,6 +386,9 @@ const setAuthCookie = (res, authToken) => {
   });
 }
 
-app.listen(port, () => {
+const httpService = app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });
+
+peerProxy(httpService)
+
