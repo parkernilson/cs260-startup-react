@@ -104,3 +104,9 @@ down the code shipped by tailwind to the client and it will load much faster!
 - **Supports existing user authentication** Users can log in with username and password
 - **Stores and retrieves credentials in Mongo DB** The credentials are salted and stored in the mongo db
 - **Restricts access when not logged in** All of the pages with user info on them are protected by checking if the user's token matches the session token
+
+## WebSocket Deliverable
+- **Backend listens for WebSocket connection** The backend has been set up to make web socket connections and proxy messages between peers
+- **Front end connects to the websocket** The front end connects to the web socket on the soundboard page and sends messages whenever a sound is played or paused
+- **Data sent over the websocket connection** When a sound is played or paused that message is sent to all other users. If the user is on the same page, then the corresponding sound will be played or paused. NOTE: this is not very useful right now because currently each person can only access _their own_ soundboards, however in the future this could be implemented so that multiple people can share sound boards and play the same sounds at a distance.
+- **WebSocket data displayed in the application interface** When a sound is played or paused it is clearly visible in the UI with a play and pause button.
