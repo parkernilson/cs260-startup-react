@@ -20,6 +20,7 @@ printf "\n----> Build the distribution package\n"
 rm -rf dist
 mkdir dist
 cp -r public dist
+cp -r build dist
 cp *.json dist
 cp *.js dist
 cp -r keys dist
