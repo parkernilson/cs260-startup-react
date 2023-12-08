@@ -110,3 +110,9 @@ down the code shipped by tailwind to the client and it will load much faster!
 - **Front end connects to the websocket** The front end connects to the web socket on the soundboard page and sends messages whenever a sound is played or paused
 - **Data sent over the websocket connection** When a sound is played or paused that message is sent to all other users. If the user is on the same page, then the corresponding sound will be played or paused. NOTE: this is not very useful right now because currently each person can only access _their own_ soundboards, however in the future this could be implemented so that multiple people can share sound boards and play the same sounds at a distance.
 - **WebSocket data displayed in the application interface** When a sound is played or paused it is clearly visible in the UI with a play and pause button.
+
+## React Deliverable
+- **Bundled using Vite and Babel (Create React App)**: The app is bundled using vite and babel, and I used create react app to make it
+- **Multiple functional react components**: All the components are functional! and there are many of them
+- **React router**: React router is used as the router for my application. Each page has a component, and there are nested components on some pages
+- **React hooks**: I use react hooks to store state and to perform effectful operations
