@@ -70,7 +70,7 @@ const Login = () => {
                             >Register</button>
                         </div>
                     </div>
-                    <a href="https://github.com/parkernilson/cs260-startup" className="mt-4 text-blue-400 hover:text-blue-600 cursor-pointer"><i className="fa-brands fa-github"></i> Check out my repo!</a>
+                    <a href="https://github.com/parkernilson/cs260-startup-react" className="mt-4 text-blue-400 hover:text-blue-600 cursor-pointer"><i className="fa-brands fa-github"></i> Check out my repo!</a>
                     <div id="user-info-display" className="flex flex-col">
                         <p id="username-info-slot"></p>
                         <button className="border border-black px-6" id="logout-button" onClick={() => logout()}>Log out</button>
